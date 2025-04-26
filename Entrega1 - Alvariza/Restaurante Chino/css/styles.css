@@ -1,22 +1,40 @@
 /* ====== Estilos Generales ====== */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Hubballi', cursive;
     margin: 0;
     padding: 0;
-    background-color: #f5e1c8;
-    color: #5a3e2b;
+    background-color: #ffffff; /* FONDO BLANCO */
+    color: #000000; /* TEXTO NEGRO */
     overflow-x: hidden;
 }
 
+
+/* ====== Fuentes ====== */
+h1, h2 {
+    font-family: 'Borel', cursive;
+}
+
+body, p, a, button, label, input, textarea, h3, h4, h5, h6 {
+    font-family: 'Hubballi', cursive;
+    font-size: 20px;
+}
+
+.acento {
+    color: #edb55d;
+    font-weight: bold;
+}
+
+
 /* ====== Navbar ====== */
 .bg-custom {
-    background-color: #9c4a1a;
+    background-color: #edb55d;
 }
 
 .navbar-brand, .nav-link {
-    color: #fff !important;
+    color: #000 !important;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Hubballi', cursive;
 }
 
 .nav-link:hover {
@@ -60,6 +78,32 @@ section {
     padding: 60px 0;
 }
 
+.promociones {
+    background-color: #ffcfd5;
+    padding: 60px;
+}
+
+.ambiente {
+    background-color: #f6faeb;
+    padding: 60px;
+}
+
+.btn-custom {
+    background-color: #c7d89b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #f5a742;
+    transform: scale(1.05);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -85,7 +129,7 @@ footer {
 
 /* ====== Formularios ====== */
 .form-container {
-    background-color: #f5e1c8;
+    background-color: #f6faeb;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -105,13 +149,13 @@ footer {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #9c4a1a;
+    border: 1px solid #c7d89b;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .form-container button {
-    background-color: #9c4a1a;
+    background-color: #c7d89b;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -122,7 +166,29 @@ footer {
 }
 
 .form-container button:hover {
-    background-color: #7f3612;
+    background-color: #f5a742;
+    transform: scale(1.05);
+}
+
+.badge-promocion {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: #ff66b2; /* Rosa sakura fluorescente */
+    color: #ffffff;
+    padding: 10px 50px;
+    /* border-radius: 20px; */
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+    animation: pulse 2s infinite;
+}
+
+/* Opcional: animación suave de pulso */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(255, 102, 178, 0.7); }
+    50% { box-shadow: 0 0 20px rgba(255, 102, 178, 1); }
+    100% { box-shadow: 0 0 10px rgba(255, 102, 178, 0.7); }
 }
 
 /* ====== Fade-in Animation ====== */
