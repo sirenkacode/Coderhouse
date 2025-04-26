@@ -103,19 +103,84 @@
 
     <!-- ====== RESEÑAS ====== -->
     <section class="reseñas container my-5 fade-in">
-        <h2 class="text-center mb-4">Lo que dicen de nosotros</h2>
-        <div class="row text-center">
-            <article class="col-md-4">
-                <p>"El mejor restaurante asiático de la ciudad" <br> <strong>- Diario Ficticio</strong></p>
-            </article>
-            <article class="col-md-4">
-                <p>"Una explosión de sabores y tradición" <br> <strong>- Revista Imaginaria</strong></p>
-            </article>
-            <article class="col-md-4">
-                <p>"Simplemente espectacular" <br> <strong>- Crítica Gourmet</strong></p>
-            </article>
+        <h2 class="mb-5 text-center">Lo que dicen de nosotros</h2>
+    
+        <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="4" aria-label="Testimonio 5"></button>
+                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="5" aria-label="Testimonio 6"></button>
+            </div>
+            <div class="carousel-inner">
+    
+                <!-- Testimonio 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"La comida es simplemente espectacular. ¡No puedo dejar de pensar en sus dumplings!"</p>
+                        <small>- Mariana R.</small>
+                    </div>
+                </div>
+    
+                <!-- Testimonio 2 -->
+                <div class="carousel-item">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"Un lugar acogedor con sabores auténticos. ¡Mi restaurante favorito sin dudas!"</p>
+                        <small>- Javier S.</small>
+                    </div>
+                </div>
+    
+                <!-- Testimonio 3 -->
+                <div class="carousel-item">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"Ideal para ir en pareja o con amigos. La atención es tan cálida como los platos."</p>
+                        <small>- Lucía G.</small>
+                    </div>
+                </div>
+    
+                <!-- Testimonio 4 -->
+                <div class="carousel-item">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"El ramen takeaway fue una sorpresa increíble. ¡Volvería una y mil veces!"</p>
+                        <small>- Tomás A.</small>
+                    </div>
+                </div>
+    
+                <!-- Testimonio 5 -->
+                <div class="carousel-item">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"Los sabores me transportaron directamente a un viaje por Asia. ¡Gracias por tanto!"</p>
+                        <small>- Sofía L.</small>
+                    </div>
+                </div>
+    
+                <!-- Testimonio 6 -->
+                <div class="carousel-item">
+                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                        <p>"Ambiente cálido, precios justos y comida deliciosa. Un lugar para recomendar siempre."</p>
+                        <small>- Rodrigo P.</small>
+                    </div>
+                </div>
+    
+            </div>
+    
+           <!-- Flechita Izquierda -->
+<button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+    <span aria-hidden="true">⬅️</span>
+    <span class="visually-hidden">Anterior</span>
+</button>
+
+<!-- Flechita Derecha -->
+<button class="carousel-control-next custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+    <span aria-hidden="true">➡️</span>
+    <span class="visually-hidden">Siguiente</span>
+</button>
+    
         </div>
     </section>
+    
     <!-- ====== FIN RESEÑAS ====== -->
 
 </main>
