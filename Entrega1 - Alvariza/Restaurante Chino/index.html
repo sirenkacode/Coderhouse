@@ -1,82 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- _____  .__                     .__              _____  .__                     .__                
-    /     \ |__| ____ _____    ____ |  | _____      /  _  \ |  |___  _______ _______|__|____________   
-   /  \ /  \|  |/ ___\\__  \ _/ __ \|  | \__  \    /  /_\  \|  |\  \/ /\__  \\_  __ \  \___   /\__  \  
-  /    Y    \  \  \___ / __ \\  ___/|  |__/ __ \_ /    |    \  |_\   /  / __ \|  | \/  |/    /  / __ \_
-  \____|__  /__|\___  >____  /\___  >____(____  / \____|__  /____/\_/  (____  /__|  |__/_____ \(____  /
-          \/        \/     \/     \/          \/          \/                \/               \/     \/  -->
+    <!-- ====== HEAD ====== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Chino</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/quienes-somos.html">Quiénes Somos</a></li>
-                <li><a href="./pages/horarios.html">Horarios</a></li>
-                <li><a href="./pages/menu.html">Menú</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- banner -->
-    <main>
-        <section class="banner">
-            <div class="banner-texto">
-                <h1>Bienvenido a Nuestro Restaurante</h1>
-                <p>Auténtica comida china en un ambiente acogedor.</p>
+
+<!-- ====== NAVBAR ====== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Restaurante Chino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/quienes-somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/horarios.html">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
             </div>
-        </section>
-<!-- ambiente -->
-        <section class="ambiente">
-           <div class="texto"> 
+        </div>
+    </nav>
+</header>
+<!-- ====== FIN NAVBAR ====== -->
+
+<main>
+
+    <!-- ====== BANNER ====== -->
+    <section class="banner d-flex align-items-center justify-content-center text-center fade-in">
+        <div class="banner-texto">
+            <h1>Bienvenido a Nuestro Restaurante</h1>
+            <p>Auténtica comida china en un ambiente acogedor.</p>
+        </div>
+    </section>
+    <!-- ====== FIN BANNER ====== -->
+
+    <!-- ====== AMBIENTE ====== -->
+    <section class="ambiente container my-5 fade-in">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
                 <h2>Un ambiente único</h2>
                 <p>Disfruta de una experiencia gastronómica en un espacio cálido y tradicional.</p>
-           </div>
-            <div class="imagenes">
-                <img src="./images/local.jpg" alt="Local">
             </div>
-        </section>
-<!-- promociones -->
-        <section class="promociones">
-            <h2>Nuestras Promociones</h2>
-            <div class="imagenes">
-                <img src="./images/miso.jpg" alt="Plato promocional 1">
-                <img src="./images/ramen2.jpg" alt="Plato promocional 2">
-                <img src="./images/asientoMesa.jpg" alt="Plato promocional 3">
+            <div class="col-md-6">
+                <img src="./images/local.jpg" alt="Imagen del local" class="img-fluid rounded shadow">
             </div>
-        </section>
-<!-- resenas -->
-        <section class="reseñas">
-            <h2>Lo que dicen de nosotros</h2>
-            <article>
-                <p>"El mejor restaurante chino de la ciudad" - Diario Ficticio</p>
-            </article>
-            <article>
-                <p>"Una explosión de sabores y tradición" - Revista Imaginaria</p>
-            </article>
-            <article>
-                <p>"Simplemente espectacular" - Crítica Gourmet</p>
-            </article>
-        </section>
-    </main>
-<!-- footer -->
-    <footer>
-        <p>Ubicación: Calle Falsa 123, Ciudad Imaginaria</p>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13085.989409683285!2d-56.17767776227306!3d-34.9190616209695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a4e4e649a1%3A0xeeee2dc3874fb014!2sParque%20Rod%C3%B3%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1742617912212!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <p>Síguenos en redes sociales</p>
-        <div class="sociales">
-            <a href="#"><img src="./images/facebook.png" alt="facebook"></span>
-            <a href="#"><img src="./images/instagram.png" alt="instagram"></span>
         </div>
-    </footer>
+    </section>
+    <!-- ====== FIN AMBIENTE ====== -->
+
+    <!-- ====== PROMOCIONES ====== -->
+    <section class="promociones container my-5 text-center fade-in">
+        <h2 class="mb-4">Nuestras Promociones</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="./images/miso.jpg" alt="Plato promocional 1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-4">
+                <img src="./images/ramen2.jpg" alt="Plato promocional 2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-4">
+                <img src="./images/asientoMesa.jpg" alt="Plato promocional 3" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+    <!-- ====== FIN PROMOCIONES ====== -->
+
+    <!-- ====== RESEÑAS ====== -->
+    <section class="reseñas container my-5 fade-in">
+        <h2 class="text-center mb-4">Lo que dicen de nosotros</h2>
+        <div class="row text-center">
+            <article class="col-md-4">
+                <p>"El mejor restaurante chino de la ciudad" <br> <strong>- Diario Ficticio</strong></p>
+            </article>
+            <article class="col-md-4">
+                <p>"Una explosión de sabores y tradición" <br> <strong>- Revista Imaginaria</strong></p>
+            </article>
+            <article class="col-md-4">
+                <p>"Simplemente espectacular" <br> <strong>- Crítica Gourmet</strong></p>
+            </article>
+        </div>
+    </section>
+    <!-- ====== FIN RESEÑAS ====== -->
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="bg-custom text-white text-center py-4 mt-5">
+    <div class="container">
+        <p>Ubicación: Calle Falsa 123, Ciudad Imaginaria</p>
+        <section class="my-3">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <p class="mt-3">Síguenos en redes sociales</p>
+        <div class="d-flex justify-content-center gap-3 mt-2">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" class="social-icon"></a>
+        </div>
+    </div>
+</footer>
+<!-- ====== FIN FOOTER ====== -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Efecto Fade-in -->
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+        threshold: 0.3,
+        rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
 </body>
 </html>
