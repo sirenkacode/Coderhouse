@@ -83,6 +83,21 @@ section {
     padding: 60px;
 }
 
+/* ====== Efecto de zoom suave en imágenes de promociones ====== */
+.promociones .col-md-4 {
+    overflow: hidden; /* para que la imagen no desborde */
+    border-radius: 15px;
+    position: relative;
+}
+
+.promociones img {
+    transition: transform 0.5s ease;
+}
+
+.promociones .col-md-4:hover img {
+    transform: scale(1.05); /* Zoom del 5% */
+}
+
 .ambiente {
     background-color: #f6faeb;
     padding: 60px;
