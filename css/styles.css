@@ -3,14 +3,12 @@ body {
     font-family: 'Hubballi', cursive;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* FONDO BLANCO */
-    color: #000000; /* TEXTO NEGRO */
+    background-color: #ffffff;
+    color: #000000;
     overflow-x: hidden;
 }
 
-
 /* ====== Fuentes ====== */
-
 h1, h2 {
     font-family: 'Borel', cursive;
 }
@@ -29,7 +27,6 @@ p {
     font-weight: bold;
 }
 
-
 /* ====== Navbar ====== */
 .bg-custom {
     background-color: #edb55d;
@@ -37,12 +34,11 @@ p {
 
 .nav-link {
     color: #000000 !important;
-    font-family: 'Hubballi', cursive;
     font-weight: bold;
     font-size: 20px;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease; /* Suavidad para todo */
+    transition: all 0.3s ease;
 }
 
 .nav-link::after {
@@ -61,45 +57,34 @@ p {
 }
 
 .nav-link:hover {
-    transform: translateY(-2px); /* Sube 2px */
+    transform: translateY(-2px);
 }
 
 .nav-link:hover::after {
-    width: 100%; /* La ondita aparece */
+    width: 100%;
 }
-
 
 /* ====== Banner ====== */
 .banner {
-    /* background-image: url('../images/ventanaLocal.jpg'); */
     background-size: cover;
     background-position: center;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
 }
 
 /* ====== Animación flotante para el Maneki Neko ====== */
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 .logo-flotante {
     animation: float 3s ease-in-out infinite;
 }
-
 
 /* ====== Secciones ====== */
 section {
@@ -108,12 +93,11 @@ section {
 
 .promociones {
     background-color: #ffcfd5;
-    padding: 60px;
+    padding: 60px 0;
 }
 
-/* ====== Efecto de zoom suave en imágenes de promociones ====== */
 .promociones .col-md-4 {
-    overflow: hidden; /* para que la imagen no desborde */
+    overflow: hidden;
     border-radius: 15px;
     position: relative;
 }
@@ -123,30 +107,43 @@ section {
 }
 
 .promociones .col-md-4:hover img {
-    transform: scale(1.05); /* Zoom del 5% */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 102, 178, 0.5);
 }
-
-.promociones .col-md-4:hover img {
-    transform: scale(1.05); /* Zoom */
-    box-shadow: 0 8px 20px rgba(255, 102, 178, 0.5); /* Glow rosa suave */
-}
-
 
 .ambiente {
     background-color: #f6faeb;
-    padding: 60px;
 }
 
+/* ====== Ajuste de Containers Centrales ====== */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+@media (min-width: 768px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* ====== Botón Personalizado ====== */
 .btn-custom {
     background-color: #c7d89b;
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-custom:hover {
@@ -155,6 +152,7 @@ section {
     box-shadow: 0 8px 20px rgba(255, 185, 97, 0.5);
 }
 
+/* ====== Imágenes ====== */
 img {
     max-width: 100%;
     height: auto;
@@ -171,8 +169,9 @@ img {
     transform: scale(1.2);
 }
 
+/* ====== Testimonios ====== */
 .testimonio {
-    background-color: #fff8dc; /* Amarillo bebé */
+    background-color: #fff8dc;
     color: #000000;
     font-family: 'Hubballi', cursive;
     min-height: 200px;
@@ -206,12 +205,11 @@ img {
     transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
-
 .carousel-indicators [data-bs-target] {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ffb961; /* Puntitos naranjita pastel */
+    background-color: #ffb961;
     opacity: 0.5;
     margin: 0 5px;
     transition: all 0.3s ease;
@@ -219,11 +217,9 @@ img {
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color: #f5a742; /* Puntito activo más fuerte */
+    background-color: #f5a742;
     transform: scale(1.3);
 }
-
-
 
 /* ====== Formularios ====== */
 .form-container {
@@ -257,7 +253,6 @@ img {
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -268,40 +263,27 @@ img {
     transform: scale(1.05);
 }
 
+/* ====== Badge Promoción ====== */
 .badge-promocion {
     position: absolute;
     bottom: 30px;
     right: 10px;
-    background-color: #ff66b2; /* Rosa sakura fluorescente */
-    color: #ffffff;
+    background-color: #ff66b2;
+    color: white;
     padding: 10px 50px;
-    /* border-radius: 20px; */
     font-size: 20px;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
     animation: pulse 2s infinite;
 }
 
-/* Opcional: animación suave de pulso */
 @keyframes pulse {
     0% { box-shadow: 0 0 10px rgba(255, 102, 178, 0.7); }
     50% { box-shadow: 0 0 20px rgba(255, 102, 178, 1); }
     100% { box-shadow: 0 0 10px rgba(255, 102, 178, 0.7); }
 }
 
-/* ====== Fade-in Animation ====== */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ====== Ajustes mínimos para subsecciones de menú ====== */
+/* ====== Secciones de Menú ====== */
 .subseccion {
     margin-bottom: 60px;
 }
@@ -328,5 +310,3 @@ footer {
     color: white;
     padding: 40px 0;
 }
-
-
