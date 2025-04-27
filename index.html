@@ -76,7 +76,6 @@
           </div>
         </div>
       </section>
-      
 
 <!-- ====== FIN BANNER ====== -->
 
@@ -185,6 +184,9 @@
 </section>
 <!-- ====== FIN RESEÑAS ====== -->
 
+<div class="scroll-top-trigger">
+    <a href="#" class="scroll-top-btn custom-arrow" aria-label="Subir arriba">⬆️</a>
+</div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -234,6 +236,10 @@
 
 <!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+window.addEventListener("scroll", function() {
+document.querySelector(".scroll-top-btn").classList.toggle("visible", window.scrollY > 300);
+});
+</script>
 </body>
 </html>
