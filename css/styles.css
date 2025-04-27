@@ -478,6 +478,21 @@ img {
     pointer-events: auto;
 }
 
+.bambu-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 0;
+    transform: scaleY(-1) rotate(5deg);
+}
+
+.bambu-inferior {
+    position: absolute;
+    bottom: -110px; 
+    right: 0;
+    width: 200px;
+}
 
 
 /* ====== Footer ====== */
