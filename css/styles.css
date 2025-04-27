@@ -13,6 +13,31 @@ h1, h2 {
     font-family: 'Borel', cursive;
 }
 
+.titulo-curvado {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
+.titulo-curvado svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.descripcion-banner {
+    font-family: 'Hubballi', cursive;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 0;
+    text-align: center;
+}
+
+
 body, p, a, button, label, input, textarea, h3, h4, h5, h6 {
     font-family: 'Hubballi', cursive;
     font-size: 20px;
@@ -103,7 +128,12 @@ section {
 }
 
 .promociones img {
-    transition: transform 0.5s ease;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin: auto;
 }
 
 .promociones .col-md-4:hover img {
@@ -196,6 +226,15 @@ section {
 .ambiente > * {
     position: relative;
     z-index: 2; 
+}
+
+.zoomable {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.zoomable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 185, 97, 0.5); /* Glow naranja pastel */
 }
 
 

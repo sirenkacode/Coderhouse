@@ -46,24 +46,38 @@
 <!-- ====== FIN NAVBAR ====== -->
 
 <main>
-
-<!-- ====== BANNER CON LOGO Y TEXTO ====== -->
-<section class="banner d-flex align-items-center" style="background-color: #ffffff; padding: 60px 0;">
-    <div class="container">
-        <div class="row align-items-center gx-3">
+    <!-- ====== BANNER ====== -->
+    <section class="banner d-flex align-items-center" style="background-color: #ffffff; padding: 60px 0;">
+        <div class="container">
+          <div class="row align-items-center gx-3">
             <!-- Imagen -->
-            <div class="col-md-5 text-center animate__animated animate__fadeInLeft">
-                <img src="./images/logo-maneki-neko.png" alt="Maneki Neko comiendo fideos" class="img-fluid logo-flotante" style="max-width: 280px;">
+            <div class="col-md-5 text-center">
+              <img src="./images/logo-maneki-neko.png" alt="Maneki Neko comiendo fideos" class="img-fluid logo-flotante" style="max-width: 280px;">
             </div>
-
+      
             <!-- Texto -->
-            <div class="col-md-7 text-center text-md-start mt-4 mt-md-0 animate__animated animate__fadeInRight">
-                <h1 class="fw-bold" style="color: #000000;">Restaurante Asiático</h1>
-                <p style="color: #000000;">Auténtica comida asiática servida con mucha ternura y amor.</p>
+            <div class="col-md-7 d-flex flex-column justify-content-center">
+              <div class="text-md-start text-center">
+                <h1 class="titulo-curvado">
+                  <svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+                    <path id="curvaTitulo" d="M10,50 Q250,0 490,50" fill="transparent"/>
+                    <text font-size="36" fill="#000000" font-family="'Borel', cursive" font-weight="bold">
+                      <textPath href="#curvaTitulo" startOffset="50%" text-anchor="middle">
+                        Restaurante Asiático
+                      </textPath>
+                    </text>
+                  </svg>
+                </h1>
+                <p class="descripcion-banner mt-3">
+                  Auténtica comida asiática<br> servida con mucha ternura y amor.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
+      
+
 <!-- ====== FIN BANNER ====== -->
 
 <!-- ====== AMBIENTE ====== -->
@@ -77,11 +91,12 @@
             <a href="./pages/contacto.html" class="btn btn-custom mt-4">Reservar</a>
         </div>
         <div class="col-md-6 text-center">
-            <img src="./images/local.jpg" alt="Imagen del local" class="img-fluid rounded shadow">
+            <img src="./images/local.jpg" alt="Imagen del local" class="img-fluid rounded shadow zoomable">
         </div>
     </div>
 </section>
 <!-- ====== FIN AMBIENTE ====== -->
+
 
 <!-- ====== PROMOCIONES ====== -->
 <section class="container promociones my-5 text-center animate__animated animate__fadeInUp">
