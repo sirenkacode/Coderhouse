@@ -10,6 +10,7 @@ body {
 
 
 /* ====== Fuentes ====== */
+
 h1, h2 {
     font-family: 'Borel', cursive;
 }
@@ -17,6 +18,10 @@ h1, h2 {
 body, p, a, button, label, input, textarea, h3, h4, h5, h6 {
     font-family: 'Hubballi', cursive;
     font-size: 20px;
+}
+
+p {
+    color: #000000;
 }
 
 .acento {
@@ -132,6 +137,7 @@ section {
     padding: 60px;
 }
 
+
 .btn-custom {
     background-color: #c7d89b;
     color: white;
@@ -195,6 +201,11 @@ img {
     transform: scale(1.3);
     color: #f5a742;
 }
+
+.carousel-item {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
 
 .carousel-indicators [data-bs-target] {
     width: 12px;
@@ -290,6 +301,26 @@ img {
     transform: translateY(0);
 }
 
+/* ====== Ajustes mínimos para subsecciones de menú ====== */
+.subseccion {
+    margin-bottom: 60px;
+}
+
+.subseccion .col-md-6 {
+    padding: 20px;
+}
+
+.menu h1 {
+    margin-bottom: 40px;
+}
+
+.subseccion ul li {
+    font-size: 20px;
+    color: #ffb961;
+    padding: 8px 0;
+    border-bottom: 2px dashed #ffb961;
+    margin-bottom: 8px;
+}
 
 /* ====== Footer ====== */
 footer {
@@ -297,4 +328,5 @@ footer {
     color: white;
     padding: 40px 0;
 }
+
 
