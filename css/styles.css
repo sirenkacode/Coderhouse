@@ -428,8 +428,36 @@ img {
 }
 
 /* ====== Footer ====== */
-footer {
+.footer-custom {
     background-color: #f3c274;
-    color: white;
+    background-image: url('../images/olas-patron-footer.png'); 
+    background-repeat: repeat-x; 
+    background-size: auto 200px;
+    background-position: bottom center; 
+    color: #000000;
     padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-custom h5 {
+    font-family: 'Borel', cursive;
+    color: #000;
+    font-size: 20px;
+}
+
+.footer-custom p {
+    font-family: 'Hubballi', cursive;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-custom .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-custom .social-icon:hover {
+    transform: scale(1.2);
 }
