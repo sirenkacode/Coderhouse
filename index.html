@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Asiático</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Hubballi&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png">
-
+    
     <!-- Tu CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -40,148 +47,128 @@
 
 <main>
 
- <!-- ====== BANNER CON MENOS SEPARACIÓN ====== -->
+<!-- ====== BANNER CON LOGO Y TEXTO ====== -->
 <section class="banner d-flex align-items-center" style="background-color: #ffffff; padding: 60px 0;">
-    <div>
-      <div class="row align-items-center gx-3"> <!-- 👈 Acá achicamos el gap -->
-        <!-- Imagen -->
-        <div class="col-md-5 text-center">
-            <img src="./images/logo-maneki-neko.png" alt="Maneki Neko comiendo fideos" class="img-fluid logo-flotante" style="max-width: 280px;">
+    <div class="container">
+        <div class="row align-items-center gx-3">
+            <!-- Imagen -->
+            <div class="col-md-5 text-center animate__animated animate__fadeInLeft">
+                <img src="./images/logo-maneki-neko.png" alt="Maneki Neko comiendo fideos" class="img-fluid logo-flotante" style="max-width: 280px;">
+            </div>
 
+            <!-- Texto -->
+            <div class="col-md-7 text-center text-md-start mt-4 mt-md-0 animate__animated animate__fadeInRight">
+                <h1 class="fw-bold" style="color: #000000;">Restaurante Asiático</h1>
+                <p style="color: #000000;">Auténtica comida asiática servida con mucha ternura y amor.</p>
+            </div>
         </div>
-  
-        <!-- Texto -->
-        <div class="col-md-7 text-center text-md-start mt-4 mt-md-0">
-          <h1 class="fw-bold" style="color: #000000;">Restaurante Asiático</h1>
-          <p style="color: #000000;">Auténtica comida asiática servida con mucha ternura y amor.</p>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- ====== FIN BANNER ====== -->
-  
+</section>
+<!-- ====== FIN BANNER ====== -->
 
-    <!-- ====== AMBIENTE ====== -->
-    <section class="container ambiente my-5 fade-in">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h2>Un ambiente único</h2>
-                <p>Disfrutá de una <span class="acento">experiencia única</span> en nuestro restaurante.</p>
-                <p>Cada rincón está pensado para transportarte a un pequeño refugio de tranquilidad y tradición. Fusionamos elementos clásicos de la cultura asiática con toques modernos para crear un espacio cálido, acogedor y lleno de detalles que invitan a relajarse.</p>
-                <p>Las texturas naturales, la suave iluminación y una atmósfera cargada de buena energía convierten cada comida en una experiencia especial. Ya sea para una cena íntima, una reunión entre amigos o una tarde de té, nuestro ambiente único es el complemento perfecto para saborear lo mejor de la gastronomía china con el corazón.</p>
-                <a href="./pages/contacto.html" class="btn btn-custom mt-4">Reservar</a>
+<!-- ====== AMBIENTE ====== -->
+<section class="container ambiente my-5 animate__animated animate__fadeInUp">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <h2>Un ambiente único</h2>
+            <p>Disfrutá de una <span class="acento">experiencia única</span> en nuestro restaurante.</p>
+            <p>Cada rincón está pensado para transportarte a un pequeño refugio de tranquilidad y tradición. Fusionamos elementos clásicos de la cultura asiática con toques modernos para crear un espacio cálido, acogedor y lleno de detalles que invitan a relajarse.</p>
+            <p>Las texturas naturales, la suave iluminación y una atmósfera cargada de buena energía convierten cada comida en una experiencia especial. Ya sea para una cena íntima, una reunión entre amigos o una tarde de té, nuestro ambiente único es el complemento perfecto para saborear lo mejor de la gastronomía china con el corazón.</p>
+            <a href="./pages/contacto.html" class="btn btn-custom mt-4">Reservar</a>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="./images/local.jpg" alt="Imagen del local" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</section>
+<!-- ====== FIN AMBIENTE ====== -->
+
+<!-- ====== PROMOCIONES ====== -->
+<section class="container promociones my-5 text-center animate__animated animate__fadeInUp">
+    <h2 class="mb-4">Nuestras Promociones</h2>
+    <div class="row g-4">
+        <div class="col-md-4 position-relative">
+            <img src="./images/miso.jpg" alt="Plato promocional 1" class="img-fluid rounded shadow">
+            <span class="badge-promocion">Takeaway -30%</span>
+        </div>
+        <div class="col-md-4 position-relative">
+            <img src="./images/ramen2.jpg" alt="Plato promocional 2" class="img-fluid rounded shadow">
+            <span class="badge-promocion">Takeaway -20%</span>
+        </div>
+        <div class="col-md-4 position-relative">
+            <img src="./images/asientoMesa.jpg" alt="Plato promocional 3" class="img-fluid rounded shadow">
+            <span class="badge-promocion">Takeaway -15%</span>
+        </div>
+    </div>
+</section>
+<!-- ====== FIN PROMOCIONES ====== -->
+
+<!-- ====== RESEÑAS ====== -->
+<section class="container reseñas my-5 animate__animated animate__fadeInUp">
+    <h2 class="mb-5 text-center">Lo que dicen de nosotros</h2>
+
+    <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="4" aria-label="Testimonio 5"></button>
+            <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="5" aria-label="Testimonio 6"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"La comida es simplemente espectacular. ¡No puedo dejar de pensar en sus dumplings!"</p>
+                    <small>- Mariana R.</small>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="./images/local.jpg" alt="Imagen del local" class="img-fluid rounded shadow">
+            <div class="carousel-item">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"Un lugar acogedor con sabores auténticos. ¡Mi restaurante favorito sin dudas!"</p>
+                    <small>- Javier S.</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"Ideal para ir en pareja o con amigos. La atención es tan cálida como los platos."</p>
+                    <small>- Lucía G.</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"El ramen takeaway fue una sorpresa increíble. ¡Volvería una y mil veces!"</p>
+                    <small>- Tomás A.</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"Los sabores me transportaron directamente a un viaje por Asia. ¡Gracias por tanto!"</p>
+                    <small>- Sofía L.</small>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
+                    <p>"Ambiente cálido, precios justos y comida deliciosa. Un lugar para recomendar siempre."</p>
+                    <small>- Rodrigo P.</small>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- ====== FIN AMBIENTE ====== -->
 
-    <!-- ====== PROMOCIONES ====== -->
-    <section class="container promociones my-5 text-center fade-in">
-        <h2 class="mb-4">Nuestras Promociones</h2>
-        <div class="row g-4">
-            <!-- Promo 1 -->
-            <div class="col-md-4 position-relative">
-                <img src="./images/miso.jpg" alt="Plato promocional 1" class="img-fluid rounded shadow">
-                <span class="badge-promocion">Takeaway -30%</span>
-            </div>
-            <!-- Promo 2 -->
-            <div class="col-md-4 position-relative">
-                <img src="./images/ramen2.jpg" alt="Plato promocional 2" class="img-fluid rounded shadow">
-                <span class="badge-promocion">Takeaway -20%</span>
-            </div>
-            <!-- Promo 3 -->
-            <div class="col-md-4 position-relative">
-                <img src="./images/asientoMesa.jpg" alt="Plato promocional 3" class="img-fluid rounded shadow">
-                <span class="badge-promocion">Takeaway -15%</span>
-            </div>
-        </div>
-    </section>
-    <!-- ====== FIN PROMOCIONES ====== -->
+        <!-- Flechas -->
+        <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+            <span aria-hidden="true">⬅️</span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
 
-    <!-- ====== RESEÑAS ====== -->
-    <section class="container reseñas my-5 fade-in">
-        <h2 class="mb-5 text-center">Lo que dicen de nosotros</h2>
-    
-        <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="4" aria-label="Testimonio 5"></button>
-                <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="5" aria-label="Testimonio 6"></button>
-            </div>
-            <div class="carousel-inner">
-    
-                <!-- Testimonio 1 -->
-                <div class="carousel-item active">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"La comida es simplemente espectacular. ¡No puedo dejar de pensar en sus dumplings!"</p>
-                        <small>- Mariana R.</small>
-                    </div>
-                </div>
-    
-                <!-- Testimonio 2 -->
-                <div class="carousel-item">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"Un lugar acogedor con sabores auténticos. ¡Mi restaurante favorito sin dudas!"</p>
-                        <small>- Javier S.</small>
-                    </div>
-                </div>
-    
-                <!-- Testimonio 3 -->
-                <div class="carousel-item">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"Ideal para ir en pareja o con amigos. La atención es tan cálida como los platos."</p>
-                        <small>- Lucía G.</small>
-                    </div>
-                </div>
-    
-                <!-- Testimonio 4 -->
-                <div class="carousel-item">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"El ramen takeaway fue una sorpresa increíble. ¡Volvería una y mil veces!"</p>
-                        <small>- Tomás A.</small>
-                    </div>
-                </div>
-    
-                <!-- Testimonio 5 -->
-                <div class="carousel-item">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"Los sabores me transportaron directamente a un viaje por Asia. ¡Gracias por tanto!"</p>
-                        <small>- Sofía L.</small>
-                    </div>
-                </div>
-    
-                <!-- Testimonio 6 -->
-                <div class="carousel-item">
-                    <div class="testimonio p-4 rounded mx-auto" style="max-width: 600px;">
-                        <p>"Ambiente cálido, precios justos y comida deliciosa. Un lugar para recomendar siempre."</p>
-                        <small>- Rodrigo P.</small>
-                    </div>
-                </div>
-    
-            </div>
-    
-           <!-- Flechita Izquierda -->
-<button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
-    <span aria-hidden="true">⬅️</span>
-    <span class="visually-hidden">Anterior</span>
-</button>
-
-<!-- Flechita Derecha -->
-<button class="carousel-control-next custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
-    <span aria-hidden="true">➡️</span>
-    <span class="visually-hidden">Siguiente</span>
-</button>
-    
-        </div>
-    </section>
-    
-    <!-- ====== FIN RESEÑAS ====== -->
+        <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+            <span aria-hidden="true">➡️</span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+<!-- ====== FIN RESEÑAS ====== -->
 
 </main>
 
@@ -201,30 +188,8 @@
 </footer>
 <!-- ====== FIN FOOTER ====== -->
 
-<!-- Bootstrap JS -->
+<!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Efecto Fade-in -->
-<script>
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-        threshold: 0.3,
-        rootMargin: "0px 0px -50px 0px"
-    };
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('appear');
-                appearOnScroll.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
-</script>
 
 </body>
 </html>
