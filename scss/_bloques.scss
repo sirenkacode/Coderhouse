@@ -1,0 +1,50 @@
+// ===== BOTÓN PERSONALIZADO =====
+
+.btn-custom {
+    @include boton-estilo($color-boton, $color-hover);
+  }
+  
+  // ===== ZOOMABLE =====
+  
+  .zoomable {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px $glow-naranja;
+    }
+  }
+  
+  // ===== BADGE PROMOCIÓN =====
+  
+  .badge-promocion {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    background-color: $color-badge;
+    color: white;
+    padding: 10px 50px;
+    font-size: $fuente-size;
+    font-weight: bold;
+    box-shadow: 0 0 10px $glow-rosa;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 10px $glow-rosa; }
+    50%  { box-shadow: 0 0 20px $glow-rosa; }
+    100% { box-shadow: 0 0 10px $glow-rosa; }
+  }
+  
+  // ===== PLACEHOLDER REUTILIZABLE =====
+  
+  %icono-social {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  

@@ -1,0 +1,60 @@
+// ===== CONTACTO: FORMULARIO Y DECORACIÓN =====
+
+section.contacto {
+    position: relative;
+    padding: 60px 0;
+  
+    h1 {
+      font-family: $fuente-titulo;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      text-align: center;
+      font-size: $fuente-size;
+    }
+  
+    .form-container {
+      background-color: #f6faeb;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+  
+      label {
+        font-weight: bold;
+        margin: 10px 0 5px;
+        display: block;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid $color-boton;
+        border-radius: 5px;
+        font-size: $fuente-size;
+      }
+  
+      button {
+        @include boton-estilo($color-boton, $color-hover);
+      }
+  
+      .btn-custom {
+        margin-top: 10px;
+      }
+    }
+  
+    .row {
+      position: relative;
+    }
+  
+    // Decorativos ya están en layout.scss como .bambu-superior / .bambu-inferior
+  }
+  

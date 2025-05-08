@@ -1,0 +1,32 @@
+@mixin boton-estilo($bg-color, $hover-color) {
+    background-color: $bg-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: $fuente-size;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      background-color: $hover-color;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  @mixin centrado-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin float-animation($dur: 3s) {
+    animation: float $dur ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  

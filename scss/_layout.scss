@@ -1,0 +1,113 @@
+// ===== NAVBAR =====
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .navbar-toggler-icon {
+    filter: brightness(0) saturate(100%);
+  }
+  
+  .bg-custom {
+    background-color: $color-primario;
+  }
+  
+  .nav-link {
+    color: $color-negro !important;
+    font-weight: bold;
+    font-size: $fuente-size;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 6px;
+      background: radial-gradient(circle at 50% 50%, #ffb961 0%, #ffb961 40%, transparent 50%);
+      background-size: 10px 10px;
+      background-repeat: repeat-x;
+      transform: translateX(-50%);
+      transition: width 0.4s ease;
+      border-radius: 10px;
+    }
+  
+    &:hover {
+      transform: translateY(-2px);
+  
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  
+  // ===== CONTAINER PERSONALIZADO =====
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    @media (min-width: 768px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    @media (min-width: 1200px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+  
+  // ===== DECORATIVOS: BAMBÚS =====
+  
+  .bambu-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 0;
+    transform: scaleY(-1) rotate(5deg);
+  }
+  
+  .bambu-inferior {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    width: 200px;
+  }
+  
+  // ===== FOOTER =====
+  
+  .footer-custom {
+    background-color: $color-primario;
+    background-image: url('../images/olas-patron-footer.png');
+    background-repeat: repeat-x;
+    background-size: auto 200px;
+    background-position: bottom center;
+    color: $color-negro;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+  
+    h5 {
+      font-family: $fuente-titulo;
+      color: $color-negro;
+      font-size: 20px;
+    }
+  
+    p {
+      font-family: $fuente-principal;
+      font-size: 18px;
+      color: $color-negro;
+    }
+  
+    .social-icon {
+      @extend %icono-social;
+    }
+  }
+  
