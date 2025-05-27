@@ -1,9 +1,16 @@
 // main.scss
+@import './vars';
+@import './mixins';
+@import './base';
+@import './bloques';
+@import './layout';
+@import './inicio';
+@import './contacto';
 
-@use 'vars';
-@use 'mixins';
-@use 'base';
-@use 'bloques';
-@use 'layout';
-@use 'inicio';
-@use 'contacto';
+// @use 'vars' as *;
+// @use 'mixins' as *;
+// @use 'base';
+// @use 'bloques';
+// @use 'layout';
+// @use 'inicio';
+// @use 'contacto';
