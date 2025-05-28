@@ -11,12 +11,12 @@
 }
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Hubballi", cursive;
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
   color: #000000;
   overflow-x: hidden;
@@ -24,8 +24,13 @@ body {
   flex-direction: column;
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 main {
   flex: 1 0 auto;
+  margin-top: 100px;
 }
 
 footer {
@@ -41,18 +46,10 @@ body, p, a, button, label, input, textarea, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
-p {
-  color: #000000;
-}
-
-.acento {
-  color: #edb55d;
-  font-weight: bold;
-}
-
 img {
   max-width: 100%;
   height: auto;
+  user-select: none;
 }
 
 .scroll-top-btn {
@@ -106,7 +103,7 @@ img {
 }
 
 .btn-custom {
-  background-color: #c7d89b;
+  background-color: #f3c274;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -137,34 +134,32 @@ img {
   padding: 10px 50px;
   font-size: 20px;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+  box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
   }
   50% {
-    box-shadow: 0 0 20px rgba(255, 102, 178, 0.7);
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.5);
   }
   100% {
-    box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
   }
 }
 .footer-custom .social-icon {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
-}
-.footer-custom .social-icon:hover {
-  transform: scale(1.2);
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
 }
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .navbar-toggler-icon {
@@ -222,19 +217,30 @@ img {
 }
 
 .bambu-superior {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 200px;
-  z-index: 0;
+  margin-top: -100px;
+  margin-left: -20px;
   transform: scaleY(-1) rotate(5deg);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
 .bambu-inferior {
+  display: block;
   position: absolute;
-  bottom: -110px;
+  bottom: 0;
   right: 0;
   width: 200px;
+  margin-bottom: -120px;
+  margin-right: -20px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
 .footer-custom {
@@ -258,6 +264,27 @@ img {
   font-size: 18px;
   color: #000000;
 }
+.menu h1 {
+  margin-top: 100px;
+}
+
+.menu .subseccion {
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -433,7 +460,8 @@ img {
 
 section.contacto {
   position: relative;
-  padding: 60px 0;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 section.contacto h1 {
   font-family: "Borel", cursive;
@@ -446,14 +474,14 @@ section.contacto p {
 }
 section.contacto .form-container {
   background-color: #f6faeb;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 10px;
   width: 100%;
   max-width: 600px;
-  margin: auto;
+  margin: 2rem auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
   position: relative;
-  z-index: 2;
 }
 section.contacto .form-container label {
   font-weight: bold;
@@ -465,12 +493,11 @@ section.contacto .form-container textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #c7d89b;
   border-radius: 5px;
   font-size: 20px;
 }
 section.contacto .form-container button {
-  background-color: #c7d89b;
+  background-color: #f3c274;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -485,9 +512,6 @@ section.contacto .form-container button:hover {
 }
 section.contacto .form-container .btn-custom {
   margin-top: 10px;
-}
-section.contacto .row {
-  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */

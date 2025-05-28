@@ -1,4 +1,10 @@
 // ===== BANNER =====
+@use 'vars' as *;
+@use 'mixins' as *;
+
+.selector {
+  @include centrado-flex;
+}
 
 .banner {
     background-size: cover;
